@@ -31,6 +31,7 @@ export default {
 
 td {
     padding: .3em;
+    background-color: rgb(41, 41, 41);
 }
 
 table {
