@@ -1,5 +1,6 @@
 <script lang="ts">
 import json from './json/data.json' //ignore, it works
+import $ from 'jquery'
 export default {
     data() {
         return {
@@ -14,7 +15,7 @@ export default {
         <table border="1">
             <tr v-for="data in jsonData">
                 <td>ID: {{ data.stateid }}</td>
-                <td>Name: {{ data.name }}</td>
+                <td class="special">Name: {{ data.name }}</td>
                 <td>Pop: {{ new Intl.NumberFormat('se-SE').format(+data.population) }}</td>
                 <td style="padding: .1em"><img :src="data.flag" /></td>
             </tr>
